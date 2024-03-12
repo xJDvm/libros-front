@@ -5,7 +5,8 @@ const data = [
         autores: [{ nombre: 'Antoine de Saint-Exupéry', fechaNacimiento: '1900-06-29', fechaFallecimiento: '1944-07-31' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1943-04-06', 
-        editorial: 'Editorial A' 
+        editorial: 'Editorial A',
+        imagen: 'src/assets/photos/1.png' 
     },
     { 
         id: 2, 
@@ -13,7 +14,8 @@ const data = [
         autores: [{ nombre: 'Gabriel García Márquez', fechaNacimiento: '1927-03-06', fechaFallecimiento: '2014-04-17' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1967-05-30', 
-        editorial: 'Editorial B' 
+        editorial: 'Editorial B',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 3, 
@@ -21,7 +23,8 @@ const data = [
         autores: [{ nombre: 'J.K. Rowling', fechaNacimiento: '1965-07-31' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1997-06-26', 
-        editorial: 'Editorial C' 
+        editorial: 'Editorial C',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 4, 
@@ -29,7 +32,8 @@ const data = [
         autores: [{ nombre: 'Fyodor Dostoevsky', fechaNacimiento: '1821-11-11', fechaFallecimiento: '1881-02-09' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1866-01-01', 
-        editorial: 'Editorial D' 
+        editorial: 'Editorial D',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 5, 
@@ -37,7 +41,8 @@ const data = [
         autores: [{ nombre: 'Jane Austen', fechaNacimiento: '1775-12-16', fechaFallecimiento: '1817-07-18' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1813-01-28', 
-        editorial: 'Editorial E' 
+        editorial: 'Editorial E',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 6, 
@@ -45,7 +50,8 @@ const data = [
         autores: [{ nombre: 'George Orwell', fechaNacimiento: '1903-06-25', fechaFallecimiento: '1950-01-21' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1949-06-08', 
-        editorial: 'Editorial F' 
+        editorial: 'Editorial F',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 7, 
@@ -53,7 +59,8 @@ const data = [
         autores: [{ nombre: 'Herman Melville', fechaNacimiento: '1819-08-01', fechaFallecimiento: '1891-09-28' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1851-10-18', 
-        editorial: 'Editorial G' 
+        editorial: 'Editorial G',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 8, 
@@ -61,7 +68,8 @@ const data = [
         autores: [{ nombre: 'F. Scott Fitzgerald', fechaNacimiento: '1896-09-24', fechaFallecimiento: '1940-12-21' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1925-04-10', 
-        editorial: 'Editorial H' 
+        editorial: 'Editorial H',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 9, 
@@ -69,7 +77,8 @@ const data = [
         autores: [{ nombre: 'Miguel de Cervantes', fechaNacimiento: '1547-09-29', fechaFallecimiento: '1616-04-22' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1605-01-16', 
-        editorial: 'Editorial I' 
+        editorial: 'Editorial I',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 10, 
@@ -77,7 +86,8 @@ const data = [
         autores: [{ nombre: 'Franz Kafka', fechaNacimiento: '1883-07-03', fechaFallecimiento: '1924-06-03' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1915-10-15', 
-        editorial: 'Editorial J' 
+        editorial: 'Editorial J',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 11, 
@@ -85,7 +95,8 @@ const data = [
         autores: [{ nombre: 'Harper Lee', fechaNacimiento: '1926-04-28', fechaFallecimiento: '2016-02-19' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1960-07-11', 
-        editorial: 'Editorial K' 
+        editorial: 'Editorial K',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 12, 
@@ -93,7 +104,8 @@ const data = [
         autores: [{ nombre: 'Leo Tolstoy', fechaNacimiento: '1828-09-09', fechaFallecimiento: '1910-11-20' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1878-01-01', 
-        editorial: 'Editorial L' 
+        editorial: 'Editorial L',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 13, 
@@ -101,7 +113,8 @@ const data = [
         autores: [{ nombre: 'J.R.R. Tolkien', fechaNacimiento: '1892-01-03', fechaFallecimiento: '1973-09-02' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1954-07-29', 
-        editorial: 'Editorial M' 
+        editorial: 'Editorial M',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 14, 
@@ -109,7 +122,8 @@ const data = [
         autores: [{ nombre: 'Homero', fechaNacimiento: '', fechaFallecimiento: '' }], 
         genero: 'Ficción épica', 
         fechaPublicacion: 'Siglo VIII a.C.', 
-        editorial: 'Editorial N' 
+        editorial: 'Editorial N',
+        imagen: 'assets/photos/1.jpg' 
     },
     { 
         id: 15, 
@@ -117,7 +131,8 @@ const data = [
         autores: [{ nombre: 'Oscar Wilde', fechaNacimiento: '1854-10-16', fechaFallecimiento: '1900-11-30' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1890-07-20', 
-        editorial: 'Editorial O' 
+        editorial: 'Editorial O',
+        imagen: 'assets/photos/1.jpg' 
     },
 ];
 

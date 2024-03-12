@@ -9,7 +9,6 @@ import RegisterModal from './components/RegisterModal';
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [libros, setLibros] = useState(makeData());
-  const [idCounter, setIdCounter] = useState(libros.length + 1);
 
   const openModal = () => {
     setShowModal(true);
@@ -19,10 +18,18 @@ function App() {
     setShowModal(false);
   };
 
-  const addLibro = (libro) => {
-    const newLibro = { ...libro, id: idCounter };
-    setLibros([...libros, newLibro]);
-    setIdCounter(idCounter + 1);
+  const addLibro = (libro, imagen) => {
+    // Guarda la imagen en la ubicación deseada
+    const imagenName = `${libro.id}_${libro.nombre.replace(/\s+/g, '-')}.png`; // Genera el nombre de la imagen basado en el ID del libro y el nombre
+    guardarImagen(imagen, imagenName);
+    // Actualiza el estado de los libros con el nuevo libro y la imagen
+    setLibros([...libros, { ...libro, imagen: imagenName }]);
+  };
+
+  const guardarImagen = (imagen, imageName) => {
+    // Aquí deberías escribir la lógica para guardar la imagen en la ubicación deseada
+    // Por simplicidad, aquí solo simulamos el guardado de la imagen
+    console.log(`Guardando imagen "${imageName}"`);
   };
 
   return (

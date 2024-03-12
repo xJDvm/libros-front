@@ -7,19 +7,30 @@ function RegisterModal({ onClose, onAddLibro }) {
   const [genero, setGenero] = useState('');
   const [fechaPublicacion, setFechaPublicacion] = useState('');
   const [editorial, setEditorial] = useState('');
+  const [imagen, setImagen] = useState(null);
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    const imagenName = `${Date.now()}_${nombreLibro.replace(/\s+/g, '-')}.png`; // Genera el nombre de la imagen basado en el ID del libro y el nombre
     const newLibro = {
+      id: Date.now(), // Genera un ID único para el libro
       nombre: nombreLibro,
       autores: autores,
       genero: genero,
       fechaPublicacion: fechaPublicacion,
       editorial: editorial,
+      imagen: imagenName, // Guarda el nombre de la imagen en los datos del libro
     };
-    onAddLibro(newLibro);
+    // Pasa los datos del libro y la imagen al componente padre
+    onAddLibro(newLibro, imagen);
     onClose();
   };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    setImagen(file);
+  };
+
 
   const handleChangeAuthor = (index, key, value) => {
     const newAutores = [...autores];
@@ -53,7 +64,6 @@ function RegisterModal({ onClose, onAddLibro }) {
             <button type="button" onClick={handleAddAuthor}>Agregar Autor</button>
           </label>
           <label>
-            a
             <h4>Género del libro</h4>
             <select value={genero} onChange={(e) => setGenero(e.target.value)} required>
               <option value="">Seleccionar</option>
@@ -70,6 +80,10 @@ function RegisterModal({ onClose, onAddLibro }) {
           <label>
             <h4>Editorial:</h4>
             <input type="text" value={editorial} onChange={(e) => setEditorial(e.target.value)} placeholder="Nombre de editorial" required />
+          </label>
+          <label>
+            <h4>Imagen:</h4>
+            <input type="file" accept="image/*" onChange={handleImageChange} required />
           </label>
           <button type="submit">Registrar</button>
         </form>

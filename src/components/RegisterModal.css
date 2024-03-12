@@ -55,7 +55,6 @@ select {
 }
 
 button {
-  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -63,9 +62,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #457aa0;
-}
+
 
 .author-container {
   display: flex;
