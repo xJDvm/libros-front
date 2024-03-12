@@ -19,7 +19,7 @@ const data = [
     },
     { 
         id: 3, 
-        nombre: 'Harry Potter y la piedra filosofal', 
+        nombre: 'Test Book', 
         autores: [{ nombre: 'J.K. Rowling', fechaNacimiento: '1965-07-31' }], 
         genero: 'Ficción', 
         fechaPublicacion: '1997-06-26', 

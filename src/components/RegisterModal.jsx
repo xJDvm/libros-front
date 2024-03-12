@@ -11,15 +11,12 @@ function RegisterModal({ onClose, onAddLibro }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const imagenName = `${Date.now()}_${nombreLibro.replace(/\s+/g, '-')}.png`; // Genera el nombre de la imagen basado en el ID del libro y el nombre
     const newLibro = {
-      id: Date.now(), // Genera un ID único para el libro
       nombre: nombreLibro,
       autores: autores,
       genero: genero,
       fechaPublicacion: fechaPublicacion,
       editorial: editorial,
-      imagen: imagenName, // Guarda el nombre de la imagen en los datos del libro
     };
     // Pasa los datos del libro y la imagen al componente padre
     onAddLibro(newLibro, imagen);
