@@ -53,6 +53,7 @@ function RegisterModal({ onClose, onAddLibro }) {
             <button type="button" onClick={handleAddAuthor}>Agregar Autor</button>
           </label>
           <label>
+            a
             <h4>Género del libro</h4>
             <select value={genero} onChange={(e) => setGenero(e.target.value)} required>
               <option value="">Seleccionar</option>
